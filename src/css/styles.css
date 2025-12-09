@@ -18,6 +18,18 @@
   margin-top: 20px;
 }
 
+.loader::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  text-align: left;
+  animation: dots 1s steps(4, end) infinite;
+}
+
+.hidden {
+  display: none;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
